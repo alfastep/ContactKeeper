@@ -19,12 +19,12 @@ export const Navbar = ({ title, icon }) => {
   const authLinks = (
     <Fragment>
       <li>Hello {user && user.name}</li>
-      <a>
-        <a onClick={onLogout} href="/login">
+      <li>
+        <a onClick={onLogout} href="#!">
           <i className="fas fa-sign-out-alt" />{' '}
           <span className="hide-sm">Logout</span>
         </a>
-      </a>
+      </li>
     </Fragment>
   );
 
